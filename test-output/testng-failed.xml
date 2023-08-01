@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Dream11]" guice-stage="DEVELOPMENT">
+  <test name="Dream11App Test">
+    <classes>
+      <class name="com.dream11.pro.TestCase.TeamCreation"/>
+    </classes>
+  </test> <!-- Dream11App Test -->
+</suite> <!-- Failed suite [Dream11] -->
