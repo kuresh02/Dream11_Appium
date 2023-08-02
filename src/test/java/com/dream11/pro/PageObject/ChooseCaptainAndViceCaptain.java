@@ -9,12 +9,12 @@ import io.appium.java_client.AppiumDriver;
 
 public class ChooseCaptainAndViceCaptain {
 
-	AppiumDriver ldriver;
+	AppiumDriver driver;
 
 	// Constructor, as every page needs a AppiumDriver to find elements
 	public ChooseCaptainAndViceCaptain(AppiumDriver driver) {
 		// to initiate the local driver
-		ldriver = driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
