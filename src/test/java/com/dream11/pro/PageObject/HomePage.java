@@ -23,7 +23,6 @@ public class HomePage {
 
     // Method used to select a match
 	public void clickMatchSelect() {
-		
 		matchSelect.click();
 	}
 }
