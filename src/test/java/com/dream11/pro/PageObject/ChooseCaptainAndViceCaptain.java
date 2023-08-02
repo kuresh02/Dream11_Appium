@@ -36,7 +36,7 @@ public class ChooseCaptainAndViceCaptain {
 	}
 
 	// Method used to select Vice Captain
-	public void lickViceCaptain() {
+	public void clickViceCaptain() {
 		vccaptain.click();
 	}
 
