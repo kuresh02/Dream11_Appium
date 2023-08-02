@@ -1,7 +1,12 @@
 package com.dream11.pro.TestCase;
 
 
+import java.time.Duration;
+
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.dream11.pro.PageObject.ChooseCaptainAndViceCaptain;
@@ -17,14 +22,17 @@ import com.dream11.pro.Testutility.ReadConfig;
 
 
 public class TeamCreation extends BaseClass {
-	public  Logger logger;
-	ReadConfig readconfig = new ReadConfig();
 	
+	ReadConfig readconfig = new ReadConfig();
+
 	@Test
-	public void Dream11TestCase() {
-		
+	public void Dream11TestCase() throws InterruptedException {
+		logger.info("Language----- Selected");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//This method is used to select Language
 		LanguageSelection lngs = new LanguageSelection(driver);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='CONTINUE']")));
 		lngs.clickContinueButton();
 		
 		logger.info("Language Selected");
@@ -32,6 +40,7 @@ public class TeamCreation extends BaseClass {
 		
 		//This method is used to select Login
 		LoginPage logp = new LoginPage(driver);
+//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Log In']")));
 		logp.clickLoginButton();
 		
 		logger.info("Login Button Selected");
@@ -39,6 +48,7 @@ public class TeamCreation extends BaseClass {
 		
 		//This method is used to phone verification
 		PhoneVerification phv = new PhoneVerification(driver);
+		Thread.sleep(5000);
 		String phnumber=readconfig.getMobNumber();
 		phv.phonenNumInputbox().sendKeys(phnumber );
 		
@@ -47,7 +57,7 @@ public class TeamCreation extends BaseClass {
 		phv.clickNxtBtn();
 		phv.clickAllow();
 		
-		logger.info("Sucessfully Login");
+		logger.info("Successfully Login");
 		
 		
 		//Match selection
@@ -57,13 +67,13 @@ public class TeamCreation extends BaseClass {
 		MatchEntry mchent = new MatchEntry(driver);
 		mchent.clickMatchEntry();
 		mchent.clickMatchEntry();
-		logger.info("Sucessfully Enter to team selection");
+		logger.info("Successfully Enter to team selection");
 		//This  is used for join a contest
 		mchent.clickMatchJoin();
 		
 		TeamSelection teamsel = new TeamSelection(driver);
 		
-		logger.info(" team selection started");
+		logger.info("Team selection started");
 		//It will select Wicket keeper
 		teamsel.player1();;
 		teamsel.player2();

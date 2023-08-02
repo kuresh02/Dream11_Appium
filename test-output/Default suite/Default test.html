@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 01 16:42:48 IST 2023</td>
+<td>Started on:</td><td>Wed Aug 02 16:40:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34869 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28454 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,31 +75,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dream11.pro.TestCase.TeamCreation.mytestend()'><b>mytestend</b><br>Test class: com.dream11.pro.TestCase.TeamCreation</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<td title='com.dream11.pro.TestCase.TeamCreation.Mytest()'><b>Mytest</b><br>Test class: com.dream11.pro.TestCase.TeamCreation</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 424ae2f2-9a27-4cff-b87a-24277fd7ca3f is not known 
+Host info: host: &apos;KURESH&apos;, ip: &apos;192.168.29.116&apos;
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [dacc114c-c6d9-4fe0-be48-85a33601c761, findElement {using=xpath, value=//*[@text=&apos;IND&apos;]}]
-Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 180000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+Command: [null, newSession {capabilities=[{appium:app=D:\D1 Space\com.dream11.pro\src/main/resources\resources\dream11.apk, appium:appPackage=com.app.dream11Pro, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:avdLaunchTimeout=180000, appium:deviceName=Xiaomi 11i HyperCharge, platformName=ANDROID, appium:udid=mn99wwrweivcnvlr}], desiredCapabilities=Capabilities {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}}]
+Capabilities {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.dream11.pro.TestCase.BaseClass.mytestend(BaseClass.java:59)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at com.dream11.pro.TestCase.BaseClass.Mytest(BaseClass.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,8 +107,8 @@ Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
@@ -124,31 +123,30 @@ Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1140202235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1140202235'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+</pre></div><a href='#' onClick='toggleBox("stack-trace1468192631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1468192631'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The session identified by 424ae2f2-9a27-4cff-b87a-24277fd7ca3f is not known 
+Host info: host: &apos;KURESH&apos;, ip: &apos;192.168.29.116&apos;
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [dacc114c-c6d9-4fe0-be48-85a33601c761, findElement {using=xpath, value=//*[@text=&apos;IND&apos;]}]
-Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 180000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+Command: [null, newSession {capabilities=[{appium:app=D:\D1 Space\com.dream11.pro\src/main/resources\resources\dream11.apk, appium:appPackage=com.app.dream11Pro, appium:autoGrantPermissions=true, appium:automationName=UiAutomator2, appium:avdLaunchTimeout=180000, appium:deviceName=Xiaomi 11i HyperCharge, platformName=ANDROID, appium:udid=mn99wwrweivcnvlr}], desiredCapabilities=Capabilities {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}}]
+Capabilities {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.dream11.pro.TestCase.BaseClass.mytestend(BaseClass.java:59)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at com.dream11.pro.TestCase.BaseClass.Mytest(BaseClass.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,8 +155,8 @@ Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
@@ -175,10 +173,23 @@ Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.dream11.pro.TestCase.TeamCreation@4f5991f6</td></tr>
+<td>com.dream11.pro.TestCase.TeamCreation@32c726ee</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dream11.pro.TestCase.TeamCreation.mytestend()'><b>mytestend</b><br>Test class: com.dream11.pro.TestCase.TeamCreation</td>
+<td></td>
+<td>0</td>
+<td>com.dream11.pro.TestCase.TeamCreation@32c726ee</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -187,8 +198,8 @@ Session ID: dacc114c-c6d9-4fe0-be48-85a33601c761
 <tr>
 <td title='com.dream11.pro.TestCase.TeamCreation.Dream11TestCase()'><b>Dream11TestCase</b><br>Test class: com.dream11.pro.TestCase.TeamCreation</td>
 <td></td>
-<td>9</td>
-<td>com.dream11.pro.TestCase.TeamCreation@4f5991f6</td></tr>
+<td>0</td>
+<td>com.dream11.pro.TestCase.TeamCreation@32c726ee</td></tr>
 </table><p>
 </body>
 </html>

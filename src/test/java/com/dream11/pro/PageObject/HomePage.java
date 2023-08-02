@@ -17,7 +17,8 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@text='IND']")
+//    @FindBy(xpath = "//*[@text='IND']")
+    @FindBy(xpath="(//android.widget.TextView[1])[@text='SGCC']")
     @CacheLookup
     private WebElement matchSelect;
 

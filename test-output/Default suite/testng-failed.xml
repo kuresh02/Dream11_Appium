@@ -3,7 +3,21 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="com.dream11.pro.TestCase.TeamCreation"/>
+      <class name="com.dream11.pro.TestCase.TeamCreation">
+        <methods>
+          <include name="Dream11TestCase"/>
+        </methods>
+      </class> <!-- com.dream11.pro.TestCase.TeamCreation -->
     </classes>
   </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.dream11.pro.TestCase.TeamCreation">
+        <methods>
+          <include name="Dream11TestCase"/>
+          <include name="Mytest"/>
+        </methods>
+      </class> <!-- com.dream11.pro.TestCase.TeamCreation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

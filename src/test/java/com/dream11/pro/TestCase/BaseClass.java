@@ -22,7 +22,7 @@ public class BaseClass {
 	public static Logger logger;
 
 	@BeforeClass
-	public void Mytest() throws MalformedURLException, InterruptedException {
+	public void Mytest() throws MalformedURLException {
 
 		// Define Logger file
 		logger = Logger.getLogger("dream11");
