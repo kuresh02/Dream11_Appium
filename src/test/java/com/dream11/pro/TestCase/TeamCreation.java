@@ -25,14 +25,14 @@ public class TeamCreation extends BaseClass {
 		
 		//This method is used to select Language
 		LanguageSelection lngs = new LanguageSelection(driver);
-		lngs.ClickContinueButton();
+		lngs.clickContinueButton();
 		
 		logger.info("Language Selected");
 		
 		
 		//This method is used to select Login
 		LoginPage logp = new LoginPage(driver);
-		logp.ClickLoginButton();
+		logp.clickLoginButton();
 		
 		logger.info("Login Button Selected");
 		
@@ -40,52 +40,52 @@ public class TeamCreation extends BaseClass {
 		//This method is used to phone verification
 		PhoneVerification phv = new PhoneVerification(driver);
 		String phnumber=readconfig.getMobNumber();
-		phv.PhonenNumInputbox().sendKeys(phnumber );
+		phv.phonenNumInputbox().sendKeys(phnumber );
 		
 		logger.info("Mobile number given");
 		
-		phv.NxtBtn();
-		phv.ClickAllow();
+		phv.clickNxtBtn();
+		phv.clickAllow();
 		
 		logger.info("Sucessfully Login");
 		
 		
 		//Match selection
 		HomePage ment = new  HomePage(driver);
-		ment.MatchSelect();
+		ment.clickMatchSelect();
 		
 		MatchEntry mchent = new MatchEntry(driver);
-		mchent.Matchentry();
-		mchent.Matchentry();
+		mchent.clickMatchEntry();
+		mchent.clickMatchEntry();
 		logger.info("Sucessfully Enter to team selection");
 		//This  is used for join a contest
-		mchent.MatchJoin();
+		mchent.clickMatchJoin();
 		
 		TeamSelection teamsel = new TeamSelection(driver);
 		
 		logger.info(" team selection started");
 		//It will select Wicket keeper
-		teamsel.Player1();;
-		teamsel.Player2();
-		teamsel.Player3();
+		teamsel.player1();;
+		teamsel.player2();
+		teamsel.player3();
 		
 		//It will switch to Batsman selection
-		teamsel.SwitchToBatsman();
-		teamsel.Player4();
-		teamsel.Player5();
-		teamsel.Player6();
-		teamsel.Player7();
-		teamsel.Player8();
-		teamsel.Player9();
+		teamsel.switchToBatsman();
+		teamsel.player4();
+		teamsel.player5();
+		teamsel.player6();
+		teamsel.player7();
+		teamsel.player8();
+		teamsel.player9();
 		
 		//It will switch to Allrounder selection
-		teamsel.SwitchToAllRounder();
-		teamsel.Player10 ();
+		teamsel.switchToAllRounder();
+		teamsel.player10 ();
 		
 
 		//It will switch to Bowler selection
-		teamsel.SwitchToAllBowler();
-		teamsel.Player11 ();
+		teamsel.switchToAllBowler();
+		teamsel.player11 ();
 		
 		//Select next for next step 
 		teamsel.nextbtn ();
@@ -93,9 +93,9 @@ public class TeamCreation extends BaseClass {
 		//Captain and viceCaptain selection and Click save to save my team
 		logger.info(" Selection of Captain and ViceCaptain started");
 		ChooseCaptainAndViceCaptain ccv = new ChooseCaptainAndViceCaptain(driver);
-		ccv.ClickCaptain();
-		ccv.ClickViceCaptain();
-		ccv.Saveteam();
+		ccv.clickCaptain();
+		ccv.clickCaptain();
+		ccv.saveTeam();
 		logger.info(" team selected sucessfully");
 		
 	}

@@ -8,40 +8,41 @@ import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.AppiumDriver;
 
 public class ChooseCaptainAndViceCaptain {
-	
+
 	AppiumDriver ldriver;
-	public ChooseCaptainAndViceCaptain(AppiumDriver driver)
-	{
-		
-		ldriver=driver;
+
+	// Constructor, as every page needs a AppiumDriver to find elements
+	public ChooseCaptainAndViceCaptain(AppiumDriver driver) {
+		// to initiate the local driver
+		ldriver = driver;
 		PageFactory.initElements(driver, this);
 	}
-		
-	@FindBy(xpath="(//android.view.ViewGroup[2] )[7]")
+
+	@FindBy(xpath = "(//android.view.ViewGroup[2] )[7]")
 	@CacheLookup
 	WebElement captain;
-	
-	@FindBy(xpath="(//android.view.ViewGroup[3] )[6]")
+
+	@FindBy(xpath = "(//android.view.ViewGroup[3] )[6]")
 	@CacheLookup
 	WebElement vccaptain;
-	
-	@FindBy(xpath="(//android.view.ViewGroup[5] )[2]")
+
+	@FindBy(xpath = "(//android.view.ViewGroup[5] )[2]")
 	@CacheLookup
 	WebElement saveteambtn;
-	
-	public void ClickCaptain()
-	{
+
+	// Method used to select Captain
+	public void clickCaptain() {
 		captain.click();
 	}
-	
-	public void ClickViceCaptain()
-	{
-		captain.click();
+
+	// Method used to select Vice Captain
+	public void lickViceCaptain() {
+		vccaptain.click();
 	}
-	
-	public void Saveteam()
-	{
+
+	// Method used to save created team
+	public void saveTeam() {
 		saveteambtn.click();
 	}
-	
+
 }
