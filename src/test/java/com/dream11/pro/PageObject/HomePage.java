@@ -22,8 +22,9 @@ public class HomePage {
     private WebElement matchSelect;
 
     // Method used to select a match
-    public void clickMatchSelect() {
-        matchSelect.click();
-    }
+	public void clickMatchSelect() {
+		
+		matchSelect.click();
+	}
 }
 
