@@ -18,4 +18,4 @@ Make sure the Appium server is running before executing the tests.
 
 ## Running the Tests
 Test Cases
-The TeamCreationTest class contains test cases that simulate the team creation process in Dream11. The test cases cover scenarios such as selecting players, setting captain/vice-captain, verifying team points, and confirming the team creation.
+The TeamCreationTest class contains test cases that simulate the team creation process in Dream11. The test cases cover scenarios such as selecting players, setting captain/vice-captain and confirming the team creation.
