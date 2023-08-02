@@ -22,6 +22,7 @@ public class HomePage {
     @CacheLookup
     private WebElement matchSelect;
 
+    
     // Method used to select a match
 	public void clickMatchSelect() {
 		matchSelect.click();
