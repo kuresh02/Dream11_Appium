@@ -4,10 +4,10 @@ Introduction
 This README file provides instructions on how to set up and execute Appium automation tests for the Dream11 Android mobile application. The automation script targets the team creation functionality within the app.
 
 ## Prerequisites
-. Android Studio with Android SDK installed.
-. Java Development Kit (JDK) installed.
-. Appium Server installed and running.
-. Android device or emulator configured and connected to Appium.
+### Android Studio with Android SDK installed.
+### Java Development Kit (JDK) installed.
+### Appium Server installed and running.
+### Android device or emulator configured and connected to Appium.
 ## Setup Instructions
 Clone this repository to your local machine.
 Import the project into your preferred Java IDE (e.g., Eclipse, IntelliJ) as a Maven project.Here i used Eclipse.
