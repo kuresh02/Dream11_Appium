@@ -27,7 +27,9 @@ public class TeamCreation extends BaseClass {
 
 	@Test
 	public void Dream11TestCase() throws InterruptedException {
-		logger.info("Language----- Selected");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		logger.info("Language----- >Selected");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//This method is used to select Language
@@ -40,7 +42,7 @@ public class TeamCreation extends BaseClass {
 		
 		//This method is used to select Login
 		LoginPage logp = new LoginPage(driver);
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Log In']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Log In']")));
 		logp.clickLoginButton();
 		
 		logger.info("Login Button Selected");
@@ -48,13 +50,14 @@ public class TeamCreation extends BaseClass {
 		
 		//This method is used to phone verification
 		PhoneVerification phv = new PhoneVerification(driver);
-		Thread.sleep(5000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Next']")));
 		String phnumber=readconfig.getMobNumber();
 		phv.phonenNumInputbox().sendKeys(phnumber );
 		
 		logger.info("Mobile number given");
 		
 		phv.clickNxtBtn();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Allow']")));
 		phv.clickAllow();
 		
 		logger.info("Successfully Login");
@@ -62,9 +65,11 @@ public class TeamCreation extends BaseClass {
 		
 		//Match selection
 		HomePage ment = new  HomePage(driver);
-		ment.clickMatchSelect();
 		
+		ment.clickMatchSelect();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='ENTRY']")));
 		MatchEntry mchent = new MatchEntry(driver);
+		
 		mchent.clickMatchEntry();
 		mchent.clickMatchEntry();
 		logger.info("Successfully Enter to team selection");

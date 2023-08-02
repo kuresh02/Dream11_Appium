@@ -133,9 +133,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc, findElement {using=xpath, value=(//android.widget.TextView[1])[@text=&apos;SGCC&apos;]}]
-Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 180000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc
+Command: [7b3e6f27-2d8b-47cd-b656-8f7d6f6a1bed, findElement {using=xpath, value=//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]}]
+Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 4000000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 4000000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7b3e6f27-2d8b-47cd-b656-8f7d6f6a1bed
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -149,8 +149,8 @@ Session ID: d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at com.dream11.pro.PageObject.HomePage.clickMatchSelect(HomePage.java:27)
-	at com.dream11.pro.TestCase.TeamCreation.Dream11TestCase(TeamCreation.java:65)
+	at com.dream11.pro.PageObject.TeamSelection.player1(TeamSelection.java:85)
+	at com.dream11.pro.TestCase.TeamCreation.Dream11TestCase(TeamCreation.java:83)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -213,12 +213,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Dream11TestCase')
 data.setCell(0, 2, 'com.dream11.pro.TestCase.TeamCreation')
-data.setCell(0, 3, 35250);
+data.setCell(0, 3, 155113);
 window.suiteTableData['Dream11']= { tableData: data, tableDiv: 'times-div-Dream11'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Dream11">
               </div> <!-- times-div-Dream11 -->
             </div> <!-- times-div -->
@@ -253,11 +253,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Dream11TestCase</span>
-                <span class="method-start">15087 ms</span>
+                <span class="method-start">12956 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">mytestend</span>
-                <span class="method-start">50341 ms</span>
+                <span class="method-start">168074 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

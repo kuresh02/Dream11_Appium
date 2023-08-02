@@ -2,16 +2,16 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-02T13:00:50Z" name="Dream11" finished-at="2023-08-02T13:01:41Z" duration-ms="50930">
+  <suite started-at="2023-08-02T17:26:24Z" name="Dream11" finished-at="2023-08-02T17:29:13Z" duration-ms="168747">
     <groups>
     </groups>
-    <test started-at="2023-08-02T13:00:50Z" name="Dream11App Test" finished-at="2023-08-02T13:01:41Z" duration-ms="50930">
+    <test started-at="2023-08-02T17:26:24Z" name="Dream11App Test" finished-at="2023-08-02T17:29:13Z" duration-ms="168747">
       <class name="com.dream11.pro.TestCase.TeamCreation">
-        <test-method is-config="true" signature="Mytest()[pri:0, instance:com.dream11.pro.TestCase.TeamCreation@49912c99]" started-at="2023-08-02T18:30:50Z" name="Mytest" finished-at="2023-08-02T18:31:05Z" duration-ms="15085" status="PASS">
+        <test-method is-config="true" signature="Mytest()[pri:0, instance:com.dream11.pro.TestCase.TeamCreation@49912c99]" started-at="2023-08-02T22:56:24Z" name="Mytest" finished-at="2023-08-02T22:56:37Z" duration-ms="12953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Mytest -->
-        <test-method signature="Dream11TestCase()[pri:0, instance:com.dream11.pro.TestCase.TeamCreation@49912c99]" started-at="2023-08-02T18:31:05Z" name="Dream11TestCase" finished-at="2023-08-02T18:31:40Z" duration-ms="35250" status="FAIL">
+        <test-method signature="Dream11TestCase()[pri:0, instance:com.dream11.pro.TestCase.TeamCreation@49912c99]" started-at="2023-08-02T22:56:37Z" name="Dream11TestCase" finished-at="2023-08-02T22:59:12Z" duration-ms="155113" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -19,9 +19,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc, findElement {using=xpath, value=(//android.widget.TextView[1])[@text='SGCC']}]
-Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 180000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc]]>
+Command: [7b3e6f27-2d8b-47cd-b656-8f7d6f6a1bed, findElement {using=xpath, value=//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]}]
+Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 4000000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 4000000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7b3e6f27-2d8b-47cd-b656-8f7d6f6a1bed]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
@@ -29,9 +29,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc, findElement {using=xpath, value=(//android.widget.TextView[1])[@text='SGCC']}]
-Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 180000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 180000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc
+Command: [7b3e6f27-2d8b-47cd-b656-8f7d6f6a1bed, findElement {using=xpath, value=//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]}]
+Capabilities {appium:app: D:\D1 Space\com.dream11.pro..., appium:appPackage: com.app.dream11Pro, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:avdLaunchTimeout: 4000000, appium:databaseEnabled: false, appium:desired: {app: D:\D1 Space\com.dream11.pro..., appPackage: com.app.dream11Pro, autoGrantPermissions: true, automationName: UiAutomator2, avdLaunchTimeout: 4000000, deviceName: Xiaomi 11i HyperCharge, platformName: ANDROID, udid: mn99wwrweivcnvlr}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 21091116UI, appium:deviceName: mn99wwrweivcnvlr, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: mn99wwrweivcnvlr, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: mn99wwrweivcnvlr, appium:viewportRect: {height: 2110, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7b3e6f27-2d8b-47cd-b656-8f7d6f6a1bed
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -50,8 +50,8 @@ Session ID: d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at com.dream11.pro.PageObject.HomePage.clickMatchSelect(HomePage.java:27)
-	at com.dream11.pro.TestCase.TeamCreation.Dream11TestCase(TeamCreation.java:65)
+	at com.dream11.pro.PageObject.TeamSelection.player1(TeamSelection.java:85)
+	at com.dream11.pro.TestCase.TeamCreation.Dream11TestCase(TeamCreation.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,7 +82,7 @@ Session ID: d1eeef3f-b19b-4beb-8e60-c67a9ea7abdc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dream11TestCase -->
-        <test-method is-config="true" signature="mytestend()[pri:0, instance:com.dream11.pro.TestCase.TeamCreation@49912c99]" started-at="2023-08-02T18:31:40Z" name="mytestend" finished-at="2023-08-02T18:31:41Z" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="mytestend()[pri:0, instance:com.dream11.pro.TestCase.TeamCreation@49912c99]" started-at="2023-08-02T22:59:12Z" name="mytestend" finished-at="2023-08-02T22:59:13Z" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mytestend -->

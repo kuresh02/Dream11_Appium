@@ -18,63 +18,65 @@ public class TeamSelection {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[60]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]")
 	@CacheLookup
 	WebElement player1;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[57]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]")
 	@CacheLookup
 	WebElement player2;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[54]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]")
 	@CacheLookup
 	WebElement player3;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[32]")
+	@FindBy(xpath = "//*[@text='BAT (0)']")
 	@CacheLookup
 	WebElement switchtobatsman;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[54]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]")
 	@CacheLookup
 	WebElement player4;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[57]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]")
 	@CacheLookup
 	WebElement player5;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[60]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]")
 	@CacheLookup
 	WebElement player6;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[63]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]")
 	@CacheLookup
 	WebElement player7;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[66]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[5]")
 	@CacheLookup
 	WebElement player8;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[69]")
+	
+
+	@FindBy(xpath = "//*[@text='AR (0)']")
+	@CacheLookup
+	WebElement switchtoallrounder;
+	
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]")
 	@CacheLookup
 	WebElement player9;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[33]")
-	@CacheLookup
-	WebElement switchtoallrounder;
-
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[60]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]")
 	@CacheLookup
 	WebElement player10;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[34]")
+	@FindBy(xpath = "//*[@text='BOWL (0)']")
 	@CacheLookup
 	WebElement switchtobowler;
 
-	@FindBy(xpath = "//android.view.ViewGroup[1] )[60]")
+	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]")
 	@CacheLookup
 	WebElement player11;
 
-	@FindBy(xpath = "(//android.view.ViewGroup[1] )[79]")
+	@FindBy(xpath = "//*[@text='NEXT']")
 	@CacheLookup
 	WebElement nxtbtn;
 

@@ -18,15 +18,15 @@ public class ChooseCaptainAndViceCaptain {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "(//android.view.ViewGroup[2] )[7]")
+	@FindBy(xpath = "(//*[@text='C'])[1]")
 	@CacheLookup
 	WebElement captain;
 
-	@FindBy(xpath = "(//android.view.ViewGroup[3] )[6]")
+	@FindBy(xpath = "(//*[@text='CD'])2]")
 	@CacheLookup
 	WebElement vccaptain;
 
-	@FindBy(xpath = "(//android.view.ViewGroup[5] )[2]")
+	@FindBy(xpath = "//*[@text='SAVE']")
 	@CacheLookup
 	WebElement saveteambtn;
 

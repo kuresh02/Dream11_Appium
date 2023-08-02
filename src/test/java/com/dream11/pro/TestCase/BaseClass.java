@@ -34,7 +34,7 @@ public class BaseClass {
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Xiaomi 11i HyperCharge");
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		caps.setCapability(MobileCapabilityType.UDID, "mn99wwrweivcnvlr");
-		caps.setCapability("avdLaunchTimeout", 180000);
+		caps.setCapability("avdLaunchTimeout", 4000000);
 		System.out.println(System.getProperty("user.dir"));
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		System.out.println(url);

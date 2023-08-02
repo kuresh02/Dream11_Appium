@@ -62,7 +62,7 @@ public class MatchEntry {
     @CacheLookup
     private WebElement matchEntry;
 
-    @FindBy(xpath = "//*[@text='10 spots']/../android.view.ViewGroup//android.widget.TextView")
+    @FindBy(xpath = "(//*[@text='JOIN'])[1]")
     @CacheLookup
     private WebElement matchJoin;
 

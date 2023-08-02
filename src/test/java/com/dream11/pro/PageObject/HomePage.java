@@ -18,7 +18,7 @@ public class HomePage {
     }
 
 //    @FindBy(xpath = "//*[@text='IND']")
-    @FindBy(xpath="(//android.widget.TextView[1])[@text='SGCC']")
+    @FindBy(xpath="(//android.view.ViewGroup[5])[4]")
     @CacheLookup
     private WebElement matchSelect;
 
