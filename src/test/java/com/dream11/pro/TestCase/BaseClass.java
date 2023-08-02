@@ -28,7 +28,7 @@ public class BaseClass {
 		logger = Logger.getLogger("dream11");
 		PropertyConfigurator.configure("Log4j.properties");
 
-		// Here DesiredCapabilities are defined
+		// Here DesiredCapabilities are defined and start driver session
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Xiaomi 11i HyperCharge");
@@ -52,9 +52,10 @@ public class BaseClass {
 
 	}
 
+	//end driver session
 	@AfterClass
 	public void mytestend() {
-
+		driver.quit();
 	}
 
 }
