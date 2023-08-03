@@ -17,8 +17,8 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-//    @FindBy(xpath = "//*[@text='IND']")
-    @FindBy(xpath="(//android.view.ViewGroup[5])[4]")
+
+    @FindBy(xpath="(//*[@text='Upcoming Matches']/../following-sibling::android.view.ViewGroup)[1]")
     @CacheLookup
     private WebElement matchSelect;
 

@@ -57,6 +57,7 @@ public class TeamCreation extends BaseClass {
 		logger.info("Mobile number given");
 		
 		phv.clickNxtBtn();
+		Thread.sleep(10000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Allow']")));
 		phv.clickAllow();
 		
@@ -82,24 +83,29 @@ public class TeamCreation extends BaseClass {
 		//It will select Wicket keeper
 		teamsel.player1();;
 		teamsel.player2();
-		teamsel.player3();
+		
 		
 		//It will switch to Batsman selection
 		teamsel.switchToBatsman();
+		teamsel.player3();
 		teamsel.player4();
 		teamsel.player5();
 		teamsel.player6();
-		teamsel.player7();
-		teamsel.player8();
-		teamsel.player9();
+		
+		
 		
 		//It will switch to Allrounder selection
+		
 		teamsel.switchToAllRounder();
-		teamsel.player10 ();
+		teamsel.player7();
+		
 		
 
 		//It will switch to Bowler selection
 		teamsel.switchToAllBowler();
+		teamsel.player8 ();
+		teamsel.player9();
+		teamsel.player10();
 		teamsel.player11 ();
 		
 		//Select next for next step 
